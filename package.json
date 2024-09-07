@@ -1,0 +1,25 @@
+{
+  "name": "ek-pse-node-auth0",
+  "version": "1.0.0",
+  "description": "A test app to protect NodeJS APIs using Auth0 Access Token",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "test",
+    "start": "node --env-file .env index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nikc-dev/EK-PSE.git"
+  },
+  "author": "Nikhil Chandrashekar (S475890)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nikc-dev/EK-PSE/issues"
+  },
+  "homepage": "https://github.com/nikc-dev/EK-PSE#readme",
+  "dependencies": {
+    "express": "^4.19.2",
+    "express-oauth2-jwt-bearer": "^1.6.0"
+  }
+}
