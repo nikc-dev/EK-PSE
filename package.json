@@ -3,10 +3,14 @@
   "version": "1.0.0",
   "description": "A test app to protect NodeJS APIs using Auth0 Access Token",
   "main": "index.js",
-  "type": "module",
+  "jest": {
+    "setupFiles": [
+      "dotenv/config"
+    ]
+  },
   "scripts": {
-    "test": "test",
-    "start": "node --env-file .env index"
+    "test": "jest --coverage",
+    "start": "node index"
   },
   "repository": {
     "type": "git",
@@ -19,7 +23,14 @@
   },
   "homepage": "https://github.com/nikc-dev/EK-PSE#readme",
   "dependencies": {
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.4.5",
     "express": "^4.19.2",
-    "express-oauth2-jwt-bearer": "^1.6.0"
+    "express-oauth2-jwt-bearer": "^1.6.0",
+    "request": "^2.88.2",
+    "supertest": "^7.0.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
   }
 }
